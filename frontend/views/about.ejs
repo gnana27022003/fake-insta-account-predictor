@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fake Account Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: url('abouttt.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            position: relative;
+            flex-direction: column;
+            padding: 20px;
+        }
+        
+        /* Applying stronger blur effect to the background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        
+        header {
+            width: 100%;
+            background: rgba(2, 2, 2, 0.9);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f4f0f0;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        ul li {
+            margin: 0 20px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #eae4e4;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .content {
+            position: relative;
+            color: white;
+            z-index: 1;
+            max-width: 70%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-top: 80px;
+        }
+        h1 {
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn {
+            background:  #511c5d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+        .btn:hover {
+            background-color:#6f507a;
+        }
+        p {
+            font-size: 23px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FAKE ACCOUNT DETECTION</div>
+            <ul>
+                <li><a href="/">Home</a></li> 
+                <li><a href="/about">About</a></li> 
+                <li><a href="/view">Datasets</a></li> 
+                <li><a href="/insights">Model insights</a></li>
+                <li><button class="btn" onclick="location.href='/form'">PREDICTION</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>
+            Fake Account Detection is an advanced web-based platform designed to help users identify fraudulent social media accounts. With the increasing number of fake profiles on social media, users often fall victim to scams, misinformation, and identity theft. Our website uses data-driven analysis and intelligent algorithms to differentiate between real and fake accounts. By evaluating profile engagement, account activity, and behavioral patterns, we provide users with a seamless way to verify the authenticity of accounts, ensuring a safer online experience.
+        
+            Our mission is to create a trustworthy digital environment where users can interact without fear of deception. We continuously improve our detection system to adapt to evolving fraudulent tactics. In the future, we plan to expand our services to multiple social media platforms and integrate real-time scanning tools for enhanced security. Whether you're an individual seeking protection from online scams or a business ensuring genuine audience engagement, Fake Account Detection provides the tools you need to stay safe in the digital world.
+        </p>
+    </div>
+</body>
+</html>
